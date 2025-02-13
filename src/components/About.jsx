@@ -3,7 +3,7 @@ import React from "react";
 function About() {
   return (
     <div className="content">
-      <card>
+      <div id="about">
         <p>
           As an aspiring Junior Front-End Web Developer based in Northern
           California, I am passionate about creating engaging and user-friendly
@@ -11,7 +11,7 @@ function About() {
           functionality, I strive to bring creative visions to life through
           clean and efficient code.
         </p>
-      </card>
+      </div>
     </div>
   );
 }
