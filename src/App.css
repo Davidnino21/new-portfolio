@@ -9,7 +9,7 @@
 
 body {
   background-color: #000000;
-  background-image: url(/public/mainpic.svg);
+  background-image: url(/mainpic.svg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
