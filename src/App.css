@@ -1,5 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap');
+
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: "Roboto Slab", serif;
+  background-color: #000000;
 }
 
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  height: 15vh;
+}
+
+#header h1 {
+    padding: 10px;
+    font-size: 40px;
+}
+
+.navigation {
+    padding: 10px;
+}
+
+.navigation ul {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  font-size: 18px;
+}

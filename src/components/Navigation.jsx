@@ -2,7 +2,7 @@ import React from "react";
 
 function Navigation() {
   return (
-    <>
+    <nav className="navigation">
       <ul>
         <li>
           <a href="">About</a>
@@ -11,7 +11,7 @@ function Navigation() {
           <a href="">Contact</a>
         </li>
         <li>
-          <a href=""> Projects</a>
+          <a href="">Projects</a>
         </li>
         <li>
           <select name="" id="">
@@ -19,7 +19,7 @@ function Navigation() {
           </select>
         </li>
       </ul>
-    </>
+    </nav>
   );
 }
 
