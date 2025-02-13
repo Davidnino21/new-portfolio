@@ -1,10 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap");
 
 * {
   margin: 0;
   padding: 0;
   color: white;
   font-family: "Roboto Slab", serif;
+}
+
+body {
   background-color: #000000;
 }
 
@@ -14,15 +17,16 @@
   align-items: center;
   padding: 15px;
   height: 15vh;
+  border-bottom: 2px solid white;
 }
 
 #header h1 {
-    padding: 10px;
-    font-size: 40px;
+  padding: 10px;
+  font-size: 40px;
 }
 
 .navigation {
-    padding: 10px;
+  padding: 10px;
 }
 
 .navigation ul {
@@ -30,4 +34,11 @@
   display: flex;
   gap: 10px;
   font-size: 18px;
+}
+
+.content {
+  max-width: 30%;
+  padding: 40px;
+  margin-left: 10px;
+  font-weight: 500;
 }
