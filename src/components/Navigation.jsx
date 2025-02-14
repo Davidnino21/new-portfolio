@@ -1,5 +1,3 @@
-import React from "react";
-
 function Navigation() {
   return (
     <nav className="navigation">
@@ -15,7 +13,7 @@ function Navigation() {
         </li>
         <li>
           <select name="" id="">
-          <option value="">Social Media</option>
+            <option value="">Social Media</option>
           </select>
         </li>
       </ul>
