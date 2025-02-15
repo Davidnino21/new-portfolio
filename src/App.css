@@ -8,12 +8,16 @@
 }
 
 body {
-  background-color: #000000;
-  background-image: url(/mainpic.svg);
+  /* background-color: rgba(0, 0, 0, .7);   */
+  background: linear-gradient(to right, #939ba9, #041f23);
+}
+
+#hero {
+  background-image: url(/mainpic6.svg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  min-height: 130vh;
+  min-height: 100vh;
 }
 
 #header {
@@ -50,14 +54,29 @@ body {
   padding: 18px;
 }
 
+.projects h2 {
+  text-align: center;
+  font-size: 40px;
+  text-decoration: underline;
+  padding: 20px;
+}
+
 .projects-photos {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: center;
+  gap: 30px;
+
+}
+
+.project-card {
+  background-color: black;
+  width: 25%;
+  height: 290px;
+  border: 2px solid white;
 }
 
 img {
-  width: 200px;
-  height: 300px;
+  width: 100%;
+  height: 80%;
 }
