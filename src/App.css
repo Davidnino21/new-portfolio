@@ -54,7 +54,7 @@ body {
   padding: 18px;
 }
 
-.projects h2 {
+h2 {
   text-align: center;
   font-size: 40px;
   text-decoration: underline;
@@ -66,7 +66,6 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
-
 }
 
 .project-card {
@@ -79,4 +78,34 @@ body {
 img {
   width: 100%;
   height: 80%;
+}
+
+.contact-section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+}
+
+form {
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0;
+  gap: 10px;
+}
+
+form input, textarea {
+  width: 300px;
+  font-size: 20px;
+  padding: 2px;
+  color: #041f23;
+}
+
+form button {
+  color: white;
+  background-color: black;
+  width: fit-content;
+  padding: 5px 15px;
 }
