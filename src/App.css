@@ -8,14 +8,16 @@
 }
 
 body {
-  /* background-color: rgba(0, 0, 0, .7);   */
-  /* background: linear-gradient(to right, #939ba9, #041f23); */
-  background: linear-gradient(to right, #000000d1,
-  #000000) 
+  background: rgb(0, 0, 0);
+  background: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 1) 60%,
+    rgba(34, 87, 140, 1) 100%
+  );
 }
 
 #hero {
-  background-image: url(/mainpic12.svg);
+  background-image: url(/profilepic.svg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -26,13 +28,13 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px;
+  padding: 15px 50px;
   height: 15vh;
 }
 
-#header h1 {
+#header img {
   padding: 20px;
-  font-size: 40px;
+  width: 60%;
 }
 
 .navigation {
@@ -50,10 +52,23 @@ body {
   padding: 60px;
 }
 
-#about p {
-  font-size: 25px;
-  width: 50%;
+.intro {
+  line-height: 1.6;
+  width: 30%;
   padding: 18px;
+  margin-left: 10%;
+
+  text-align: center;
+}
+
+.intro h1 {
+  font-size: 60px;
+  font-weight: 600;
+}
+
+.intro p {
+  font-size: 23px;
+  font-weight: 100;
 }
 
 h2 {
@@ -90,6 +105,23 @@ img {
   padding: 20px 0;
 }
 
+.contact-content {
+  display: flex;
+  gap: 50px;
+  padding: 20px 0;
+  line-height: 2;
+}
+
+.contact-content h3 {
+  font-size: 20px;
+  text-decoration: underline;
+  padding: 5px 0;
+  font-weight: 500;
+}
+
+.contact-content h4 {
+}
+
 form {
   max-width: 350px;
   display: flex;
@@ -98,7 +130,8 @@ form {
   gap: 10px;
 }
 
-form input, textarea {
+form input,
+textarea {
   width: 300px;
   font-size: 20px;
   padding: 2px;
@@ -108,7 +141,11 @@ form input, textarea {
 
 form button {
   color: white;
-  background-color: black;
+  background-color: #2c3e50;
   width: fit-content;
   padding: 5px 15px;
+}
+
+form button:hover {
+  background-color: #3498db;
 }

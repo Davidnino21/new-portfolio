@@ -4,7 +4,7 @@ function Header() {
   return (
     <header id="header">
       <div>
-        <h1>David Nino</h1>
+        <img src="/David.svg" alt="logo" />
       </div>
       <Navigation />
     </header>

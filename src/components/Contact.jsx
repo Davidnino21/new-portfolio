@@ -31,7 +31,7 @@ function Contact() {
       <h2>Contact Me</h2>
       <div className="contact-content">
         <div>
-          <h3>Get in touch</h3>
+          <h3>Get in touch:</h3>
           <h4>Email: Davidnino_21@yahoo.com</h4>
           <h4>Phone: 209-269-9052</h4>
         </div>
