@@ -103,6 +103,7 @@ form input, textarea {
   font-size: 20px;
   padding: 2px;
   color: #041f23;
+  border-radius: 5px;
 }
 
 form button {
