@@ -9,11 +9,13 @@
 
 body {
   /* background-color: rgba(0, 0, 0, .7);   */
-  background: linear-gradient(to right, #939ba9, #041f23);
+  /* background: linear-gradient(to right, #939ba9, #041f23); */
+  background: linear-gradient(to right, #000000d1,
+  #000000) 
 }
 
 #hero {
-  background-image: url(/mainpic6.svg);
+  background-image: url(/mainpic12.svg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
