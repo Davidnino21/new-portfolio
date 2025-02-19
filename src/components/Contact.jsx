@@ -13,9 +13,9 @@ function Contact() {
     setData({ ...data, [name]: value });
   }
 
-  function handleSubmit(e) {
+  async function handleSubmit(e) {
     e.preventDefault();
-
+    setError("");
     if (!data.name) {
       setError("Name is required");
     } else if (!data.email) {
@@ -23,7 +23,19 @@ function Contact() {
     } else if (!data.message) {
       setError("Message is required");
     }
-    console.log(data);
+    if (!error) {
+      try {
+        const res = await fetch("/api/send-message", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(data),
+        });
+        const json = await res.json();
+        console.log(json);
+      } catch (error) {
+        console.log(error);
+      }
+    }
   }
 
   return (
