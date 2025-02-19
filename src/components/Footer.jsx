@@ -7,7 +7,7 @@ function Footer() {
   return (
     <div className="footer-section">
       <div className="footer-logo">
-        <img src="/David.svg" alt="logo" />
+        <img id="logo" src="/David.svg" alt="logo" />
       </div>
       <div className="icons">
         <p>

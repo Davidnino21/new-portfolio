@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { AiOutlineMail } from "react-icons/ai";
+import { MdPhoneIphone } from "react-icons/md";
 
 function Contact() {
   const [data, setData] = useState({
@@ -44,8 +46,12 @@ function Contact() {
       <div className="contact-content">
         <div>
           <h3>Get in touch:</h3>
-          <h4>Email: Davidnino_21@yahoo.com</h4>
-          <h4>Phone: 209-269-9052</h4>
+          <h4>
+            <AiOutlineMail /> Davidnino_21@yahoo.com
+          </h4>
+          <h4>
+            <MdPhoneIphone /> 209-269-9052
+          </h4>
         </div>
         <form onSubmit={handleSubmit}>
           <input
