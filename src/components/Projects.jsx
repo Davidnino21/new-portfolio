@@ -17,18 +17,34 @@ function Projects() {
         </div>
         <div className="project-card">
           <img src="/pokemon.png" alt="" />
+          <div>
+            <h3>Pokemon Index</h3>
+          </div>
         </div>
         <div className="project-card">
           <img src="/groovy.png" alt="" />
+          <div>
+            <h3>Groovy Graphics</h3>
+          </div>
         </div>
+
         <div className="project-card">
           <img src="/converter.png" alt="" />
+          <div>
+            <h3>XchangeXpert</h3>
+          </div>
         </div>
         <div className="project-card">
           <img src="/time-transformer.png" alt="" />
+          <div>
+            <h3>Time-Transformer</h3>
+          </div>
         </div>
         <div className="project-card">
           <img src="/calculator.png" alt="" />
+          <div>
+            <h3>Calculator</h3>
+          </div>
         </div>
       </div>
     </div>

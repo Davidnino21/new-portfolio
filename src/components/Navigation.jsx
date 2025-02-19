@@ -5,16 +5,14 @@ function Navigation() {
         <li>
           <a href="">About</a>
         </li>
+        <li id="work">
+          <a href="">My Work</a>
+        </li>
         <li>
           <a href="">Contact</a>
         </li>
         <li>
-          <a href="">Projects</a>
-        </li>
-        <li>
-          <select name="" id="">
-            <option value="">Social Media</option>
-          </select>
+          <a href="">Social Media</a>
         </li>
       </ul>
     </nav>
