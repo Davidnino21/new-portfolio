@@ -3,16 +3,16 @@ function Navigation() {
     <nav className="navigation">
       <ul>
         <li>
-          <a href="">About</a>
+          <a href="#about">About</a>
         </li>
         <li id="work">
-          <a href="">My Work</a>
+          <a href="#my-work">My Work</a>
         </li>
         <li>
-          <a href="">Contact</a>
+          <a href="#contact">Contact</a>
         </li>
         <li>
-          <a href="">Social Media</a>
+          <a href="#logo">Social Media</a>
         </li>
       </ul>
     </nav>

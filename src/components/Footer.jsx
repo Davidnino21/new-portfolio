@@ -1,4 +1,3 @@
-import React from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa6";
 import { FaStackOverflow } from "react-icons/fa";
 import { SiIndeed } from "react-icons/si";

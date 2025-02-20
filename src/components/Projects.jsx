@@ -1,6 +1,6 @@
 function Projects() {
   return (
-    <div className="projects">
+    <div className="projects" id="my-work">
       <h2>My Work</h2>
       <div className="projects-photos">
         <div className="project-card">
@@ -24,7 +24,13 @@ function Projects() {
         <div className="project-card">
           <img src="/groovy.png" alt="" />
           <div>
-            <h3>Groovy Graphics</h3>
+            <a
+              href="https://ai-groovy-graphics-dd548751a1ac.herokuapp.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <h3>Groovy Graphics</h3>
+            </a>
           </div>
         </div>
 
@@ -37,13 +43,25 @@ function Projects() {
         <div className="project-card">
           <img src="/time-transformer.png" alt="" />
           <div>
-            <h3>Time-Transformer</h3>
+          <a
+              href="https://time-transformer.onrender.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <h3>Time Transformer</h3>
+            </a>
           </div>
         </div>
         <div className="project-card">
           <img src="/calculator.png" alt="" />
           <div>
-            <h3>Calculator</h3>
+            <a
+              href="https://davidnino21.github.io/simple-calculator/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <h3>Calculator</h3>
+            </a>
           </div>
         </div>
       </div>

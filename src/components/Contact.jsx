@@ -9,6 +9,8 @@ function Contact() {
     message: "",
   });
   const [error, setError] = useState("");
+  const [success, setSuccess] = useState("");
+  const [sending, setSending] = useState(false);
 
   function handleChange(e) {
     const { name, value } = e.target;
@@ -18,6 +20,7 @@ function Contact() {
   async function handleSubmit(e) {
     e.preventDefault();
     setError("");
+    setSuccess("");
     if (!data.name) {
       setError("Name is required");
     } else if (!data.email) {
@@ -27,21 +30,25 @@ function Contact() {
     }
     if (!error) {
       try {
+        setSending(true);
         const res = await fetch("/api/send-message", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify(data),
         });
         const json = await res.json();
-        console.log(json);
+        setSuccess(json.message);
+        setData({ name: "", email: "", message: "" });
       } catch (error) {
-        console.log(error);
+        setError("Failed to send.Try again.");
+      } finally {
+        setSending(false);
       }
     }
   }
 
   return (
-    <div className="contact-section">
+    <div className="contact-section" id="contact">
       <h2>Contact Me</h2>
       <div className="contact-content">
         <div>
@@ -58,22 +65,28 @@ function Contact() {
             type="text"
             name="name"
             placeholder="Name"
+            value={data.name}
             onChange={handleChange}
           />
           <input
             type="text"
             name="email"
             placeholder="Email"
+            value={data.email}
             onChange={handleChange}
           />
           <textarea
             rows="4"
             name="message"
             placeholder="Type Message"
+            value={data.message}
             onChange={handleChange}
           ></textarea>
-          <p>{error}</p>
-          <button>Submit</button>
+          <p className="success">{success}</p>
+          <p className="error">{error}</p>
+          <button disabled={sending}>
+            {sending ? "Sending Message..." : "Submit"}
+          </button>
         </form>
       </div>
     </div>
