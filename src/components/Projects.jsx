@@ -18,7 +18,13 @@ function Projects() {
         <div className="project-card">
           <img src="/pokemon.png" alt="" />
           <div>
-            <h3>Pokemon Index</h3>
+            <a
+              href="https://davidnino21.github.io/pokemon-index/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <h3>Pokemon Index</h3>
+            </a>
           </div>
         </div>
         <div className="project-card">
@@ -35,9 +41,15 @@ function Projects() {
         </div>
 
         <div className="project-card">
-          <img src="/converter.png" alt="" />
+          <img src="/text-editor.png" alt="" />
           <div>
-            <h3>XchangeXpert</h3>
+            <a
+              href="https://texteditor-80wv.onrender.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <h3>Text Editor</h3>
+            </a>
           </div>
         </div>
         <div className="project-card">
